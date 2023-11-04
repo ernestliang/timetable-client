@@ -1,0 +1,45 @@
+// --- dialog modal
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0, 0.6);
+    /* padding: 20px;
+    margin: 20px; */
+    border-radius: 5px;
+    z-index: 10 !important;
+}
+.modal-display {
+    height: auto;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    z-index: 10 !important;
+}
+@media (max-width: 480px) {
+    .modal-display {
+        top: 40%;
+        left: 45%;
+        width: 85%;
+    }
+}
+
+// --- dialog transition
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.6s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
