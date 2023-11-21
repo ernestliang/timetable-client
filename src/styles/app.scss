@@ -43,3 +43,18 @@
 .fade-leave-to {
     opacity: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .modal-display {
+        top: 40%;
+        left: 45%;
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .modal-display {
+        top: 45%;
+        left: 45%;
+        width: 50%;
+    }
+}
